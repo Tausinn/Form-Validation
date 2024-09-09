@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/formMessage.html" id="form" onsubmit="return validateForm()">
+        <h2>Contact Us </h2>
+        <label for="firstname">First Name:</label> <br>
+        <input type="text" id="firstname"> <br>
+        <p class="username-error"></p>
+        <label for="lastname">Last Name:</label> <br>
+        <input type="text" id="lastname"> <br>
+        <p class="username-error"></p>
+        <label for="email">Email Address </label> <br>
+        <input type="email" id="email"> <br>
+        <p id="email-error"></p>
+        <label for="message">Message:</label> <br>
+        <textarea name="message" id="message"></textarea> <br>
+        <p id="message-error"></p>
+        <input type="checkbox" id="checkbox">
+        <label for="consent">I consent to being contacted by the team</label> <br>
+        <button id="submit-btn">Submit</button>
+        
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
